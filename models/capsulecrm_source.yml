@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: capsulecrm_source
+    schema: "{{ env_var('DBT_TARGET_SCHEMA') }}"
+    description: Data synced from Capsule.
+    tables:
+      - name: opportunities
+        description: Source table for capsule opportunities data.
+      - name: parties
+        description: Source table for capsule parties data.
