@@ -1,7 +1,8 @@
 {{ config(materialized='table') }}
 
 with parties as (
-    select * from {{ source ('capsulecrm_source', 'parties') }}
+    select * from {{ ref('fact_parties_snapshot') }} 
+    where dbt_valid_to is null
 )
 
 select * from parties

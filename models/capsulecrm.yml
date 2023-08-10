@@ -7,3 +7,5 @@ models:
     description: Capsule parties
   - name: fact_opportunities_snapshot
     description: Snapshot table for opportunities, capturing changes over time.
+  - name: dim_parties_snapshot
+    description: Snapshot table for opportunities, capturing changes over time.
