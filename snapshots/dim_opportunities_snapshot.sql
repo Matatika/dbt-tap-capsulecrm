@@ -3,9 +3,9 @@
 {{
     config(
       target_schema=var('schema'),
-      unique_key='reference',
+      unique_key='id',
       strategy='timestamp',
-      updated_at='last_modified',
+      updated_at='updated_at',
     )
 }}
 
