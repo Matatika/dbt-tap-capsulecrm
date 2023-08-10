@@ -1,4 +1,4 @@
-{% snapshot dim_opportunities_snapshot %}
+{% snapshot fact_opportunities_snapshot %}
 
 {{
     config(
@@ -13,11 +13,11 @@ with opportunities as (
     select * from {{ source ('capsulecrm_source', 'opportunities') }}
 ),
 
-dim_opportunities_snapshot as (
+fact_opportunities_snapshot as (
     select
         *
     from opportunities
 )
 
-select * from dim_opportunities_snapshot
+select * from fact_opportunities_snapshot
 {% endsnapshot %}

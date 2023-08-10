@@ -1,9 +1,9 @@
 version: 2
 
 models:
-  - name: dim_opportunities
+  - name: fact_opportunities
     description: Capsule opportunities synced with their most data
   - name: dim_parties
     description: Capsule parties
-  - name: dim_opportunities_snapshot
+  - name: fact_opportunities_snapshot
     description: Snapshot table for opportunities, capturing changes over time.
